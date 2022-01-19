@@ -16,7 +16,7 @@ enum Market {
         case .total:
             return "Тотал матча"
         default:
-            return "Победит команда"
+            return "1X2"
         }
     }
 }
@@ -31,4 +31,5 @@ class BetEvent {
     var outcome: String?
     var betAmount: String?
     var participants: String?
+    var parts: [BetPart]?
 }

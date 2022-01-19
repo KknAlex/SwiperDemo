@@ -24,6 +24,9 @@
 		FA928CBD279865BE007000B6 /* BetPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CBC279865BE007000B6 /* BetPart.swift */; };
 		FA928CBF2798693E007000B6 /* BetEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CBE2798693E007000B6 /* BetEventView.swift */; };
 		FA928CC12798694C007000B6 /* BetEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA928CC02798694C007000B6 /* BetEventView.xib */; };
+		FA928CC327986C78007000B6 /* TempGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CC227986C78007000B6 /* TempGenerator.swift */; };
+		FA928CC527988829007000B6 /* BetEventSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CC427988829007000B6 /* BetEventSubview.swift */; };
+		FA928CC727988855007000B6 /* BetEventSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA928CC627988855007000B6 /* BetEventSubview.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		FA928CBC279865BE007000B6 /* BetPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetPart.swift; sourceTree = "<group>"; };
 		FA928CBE2798693E007000B6 /* BetEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetEventView.swift; sourceTree = "<group>"; };
 		FA928CC02798694C007000B6 /* BetEventView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetEventView.xib; sourceTree = "<group>"; };
+		FA928CC227986C78007000B6 /* TempGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempGenerator.swift; sourceTree = "<group>"; };
+		FA928CC427988829007000B6 /* BetEventSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetEventSubview.swift; sourceTree = "<group>"; };
+		FA928CC627988855007000B6 /* BetEventSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetEventSubview.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 				FA928C962796D1BA007000B6 /* SceneDelegate.swift */,
 				FA928CAE27984D96007000B6 /* Extensions.swift */,
 				FA928CAC27984C97007000B6 /* Colors.swift */,
+				FA928CC227986C78007000B6 /* TempGenerator.swift */,
 				FA928CB7279861F4007000B6 /* Models */,
 				FA928CB627986131007000B6 /* Custom */,
 				FA928CB427985FA4007000B6 /* Swiper */,
@@ -118,6 +125,8 @@
 			children = (
 				FA928CBE2798693E007000B6 /* BetEventView.swift */,
 				FA928CC02798694C007000B6 /* BetEventView.xib */,
+				FA928CC427988829007000B6 /* BetEventSubview.swift */,
+				FA928CC627988855007000B6 /* BetEventSubview.xib */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			files = (
 				FA928CA12796D1BD007000B6 /* LaunchScreen.storyboard in Resources */,
 				FA928CC12798694C007000B6 /* BetEventView.xib in Resources */,
+				FA928CC727988855007000B6 /* BetEventSubview.xib in Resources */,
 				FA928C9E2796D1BD007000B6 /* Assets.xcassets in Resources */,
 				FA928C9C2796D1BA007000B6 /* Main.storyboard in Resources */,
 			);
@@ -205,6 +215,7 @@
 			files = (
 				FA928C992796D1BA007000B6 /* FastbetViewController.swift in Sources */,
 				FA928CB127984F8C007000B6 /* MainTabBarViewController.swift in Sources */,
+				FA928CC527988829007000B6 /* BetEventSubview.swift in Sources */,
 				FA928CB9279862B4007000B6 /* BetEvent.swift in Sources */,
 				FA928CB327985D3C007000B6 /* AddViewController.swift in Sources */,
 				FA928CAD27984C97007000B6 /* Colors.swift in Sources */,
@@ -216,6 +227,7 @@
 				FA928CAF27984D96007000B6 /* Extensions.swift in Sources */,
 				FA928CBB27986342007000B6 /* User.swift in Sources */,
 				FA928CBF2798693E007000B6 /* BetEventView.swift in Sources */,
+				FA928CC327986C78007000B6 /* TempGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

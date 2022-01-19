@@ -28,6 +28,17 @@ class BetEventView: UIView {
         bottomLabels[1].text = model.participants
     }
     
+    private func configureSubview(model: BetEvent) {
+        let subview: BetEventSubview = .fromNib()
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        contentSubview.addSubview(subview)
+        let verticalConstraint = subview.centerYAnchor.constraint(equalTo: contentSubview.centerYAnchor)
+        let trailingConstraint = subview.trailingAnchor.constraint(equalTo: contentSubview.trailingAnchor)
+        let leadingConstraint = subview.leadingAnchor.constraint(equalTo: contentSubview.leadingAnchor)
+        contentSubview.addConstraints([trailingConstraint, verticalConstraint, leadingConstraint])
+        subview.configure(model: model)
+    }
+    
     // MARK: - Actions
     
     @objc func followButtonPressed(_ sender: Any) {

@@ -12,4 +12,16 @@ class User {
     var picks: String?
     var profit: String?
     var yield: String?
+    var money: String?
+    var someCount: String?
+    var imageName: String?
+    
+    static func current() -> User {
+        var user = User()
+        user.name = "kobebryant"
+        user.imageName = "temp_kobe"
+        user.money = "143.33$"
+        user.someCount = "4300"
+        return user
+    }
 }
