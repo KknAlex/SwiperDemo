@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "gettyimages-490703338.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "fastbet_bet_icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "fastbet_bet_icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

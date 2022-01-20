@@ -17,7 +17,7 @@ class User {
     var imageName: String?
     
     static func current() -> User {
-        var user = User()
+        let user = User()
         user.name = "kobebryant"
         user.imageName = "temp_kobe"
         user.money = "143.33$"

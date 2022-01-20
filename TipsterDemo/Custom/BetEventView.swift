@@ -16,6 +16,14 @@ class BetEventView: UIView {
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet var topLabels: [UILabel]!
     @IBOutlet var bottomLabels: [UILabel]!
+    @IBOutlet var bottomViews: [UIView]!
+    
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        
+        bottomViews[0].round(radius: 16, corners: [.bottomLeft, .topLeft])
+        bottomViews[1].round(radius: 16, corners: [.bottomRight, .topRight])
+    }
     
     func configure(model: BetEvent) {
         if let user = model.user, let imageName = user.imageName {
@@ -26,26 +34,34 @@ class BetEventView: UIView {
         
         bottomLabels[0].text = model.betAmount
         bottomLabels[1].text = model.participants
+        
+        userImageView.round(radius: 24, corners: .allCorners)
+        
+        configureSubview(model: model)
+        
+        layoutIfNeeded()
+        contentView.round(radius: 24, corners: .allCorners)
     }
     
     private func configureSubview(model: BetEvent) {
         let subview: BetEventSubview = .fromNib()
         subview.translatesAutoresizingMaskIntoConstraints = false
         contentSubview.addSubview(subview)
-        let verticalConstraint = subview.centerYAnchor.constraint(equalTo: contentSubview.centerYAnchor)
         let trailingConstraint = subview.trailingAnchor.constraint(equalTo: contentSubview.trailingAnchor)
         let leadingConstraint = subview.leadingAnchor.constraint(equalTo: contentSubview.leadingAnchor)
-        contentSubview.addConstraints([trailingConstraint, verticalConstraint, leadingConstraint])
+        let topConstraint = subview.topAnchor.constraint(equalTo: contentSubview.topAnchor)
+        let bottomConstraint = subview.bottomAnchor.constraint(equalTo: contentSubview.bottomAnchor)
+        contentSubview.addConstraints([trailingConstraint, leadingConstraint, topConstraint, bottomConstraint])
         subview.configure(model: model)
     }
     
     // MARK: - Actions
     
-    @objc func followButtonPressed(_ sender: Any) {
+    @IBAction func followButtonPressed(_ sender: Any) {
         
     }
     
-    @objc func shareButtonPressed(_ sender: Any) {
+    @IBAction func shareButtonPressed(_ sender: Any) {
         
     }
 }

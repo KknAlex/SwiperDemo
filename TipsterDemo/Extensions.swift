@@ -34,4 +34,37 @@ extension UIView {
     class func fromNib<T: UIView>() -> T {
         return Bundle(for: T.self).loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
     }
+    
+    func round(radius: CGFloat, borderWidth: CGFloat? = nil, borderColor: CGColor? = nil, clipsToBounds: Bool = false) {
+        
+        layer.cornerRadius = radius
+        if let borderWidth = borderWidth {
+            layer.borderWidth = borderWidth
+        }
+        if let borderColor = borderColor {
+            layer.borderColor = borderColor
+        }
+        
+        self.clipsToBounds = clipsToBounds
+    }
+    
+    func round(radius: CGFloat, corners: UIRectCorner = [.topLeft , .bottomLeft, .bottomRight], borderWidth: CGFloat? = nil, borderColor: CGColor? = nil) {
+        
+        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = bounds
+        maskLayer.path = maskPath.cgPath
+        layer.mask = maskLayer
+        
+        if let borderWidth = borderWidth, let borderColor = borderColor {
+            let borderLayer = CAShapeLayer()
+            borderLayer.frame = bounds
+            borderLayer.lineWidth = borderWidth
+            borderLayer.fillColor = UIColor.clear.cgColor
+            borderLayer.strokeColor = borderColor
+            borderLayer.path = maskPath.cgPath
+            layer.addSublayer(borderLayer)
+        }
+    }
 }

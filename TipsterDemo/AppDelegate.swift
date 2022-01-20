@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func updateTabBar() {
         UITabBar.appearance().barTintColor = DefaultColor.primaryDarkGray
         UITabBar.appearance().tintColor = DefaultColor.tabBarGray
+        UITabBar.appearance().isTranslucent = false
     }
 
     // MARK: UISceneSession Lifecycle

@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "gettyimages-490703338.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "money_icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "money_icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
