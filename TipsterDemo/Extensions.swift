@@ -67,4 +67,21 @@ extension UIView {
             layer.addSublayer(borderLayer)
         }
     }
+    
+    func addShadow(shadowColor: CGColor = UIColor(hex: 0x00333B).withAlphaComponent(0.1).cgColor, shadowOffset: CGSize = CGSize(width: 0, height: 0), shadowOpacity: Float = 1, shadowRadius: CGFloat = 7.0, cornerRadius: CGFloat = 1) {
+        layer.shadowColor = shadowColor
+        layer.shadowOffset = shadowOffset
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowRadius = shadowRadius
+    }
+    
+    func round(radius: CGFloat, shadowColor: CGColor, shadowOffset: CGSize, shadowOpacity: Float, shadowRadius: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        layer.cornerRadius = radius
+
+        layer.shadowColor = shadowColor
+        layer.shadowOffset = shadowOffset
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowRadius = shadowRadius
+    }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 struct DefaultColor {
     static let primaryDarkGray = UIColor(hex: 0x1A0F27)
+    static let primaryGray = UIColor(hex: 0x271D34)
     static let errorRed = UIColor(hex: 0xF8274D)
     static let primaryBlue = UIColor(hex: 0x37AAFD)
     static let tabBarGray = UIColor(hex: 0xF5F2F7)

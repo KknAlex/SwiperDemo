@@ -8,9 +8,7 @@
 import UIKit
 
 class BetEventSubview: UIView {
-    
-    static let identifire = "BetEventSubview"
-    
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
