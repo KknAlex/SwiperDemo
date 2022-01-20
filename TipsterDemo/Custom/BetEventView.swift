@@ -23,6 +23,7 @@ class BetEventView: UIView {
         
         bottomViews[0].round(radius: 16, corners: [.bottomLeft, .topLeft])
         bottomViews[1].round(radius: 16, corners: [.bottomRight, .topRight])
+//        contentView.round(radius: 24, corners: .allCorners)
     }
     
     func configure(model: BetEvent) {
@@ -40,7 +41,7 @@ class BetEventView: UIView {
         configureSubview(model: model)
         
         layoutIfNeeded()
-        contentView.round(radius: 24, corners: .allCorners)
+//        contentView.round(radius: 24, corners: .allCorners)
     }
     
     private func configureSubview(model: BetEvent) {

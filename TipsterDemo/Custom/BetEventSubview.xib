@@ -154,24 +154,24 @@
                     <color key="backgroundColor" red="0.15294117647058825" green="0.11372549019607843" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="Nxv-5H-GAQ" firstAttribute="width" secondItem="Xm3-Nc-qFr" secondAttribute="width" id="26v-jo-EUu"/>
-                        <constraint firstItem="67d-3U-imb" firstAttribute="top" secondItem="Ah4-f0-P58" secondAttribute="top" constant="20" id="3C2-eI-a62"/>
+                        <constraint firstItem="67d-3U-imb" firstAttribute="top" secondItem="Ah4-f0-P58" secondAttribute="top" constant="16" id="3C2-eI-a62"/>
                         <constraint firstItem="jMy-7N-jmX" firstAttribute="top" secondItem="1Xf-cK-3Sq" secondAttribute="bottom" constant="16" id="A3i-Md-c2q"/>
-                        <constraint firstItem="Xm3-Nc-qFr" firstAttribute="top" secondItem="jMy-7N-jmX" secondAttribute="bottom" constant="24" id="CaE-Ey-t19"/>
+                        <constraint firstItem="Xm3-Nc-qFr" firstAttribute="top" secondItem="jMy-7N-jmX" secondAttribute="bottom" constant="20" id="CaE-Ey-t19"/>
                         <constraint firstItem="jMy-7N-jmX" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="Mor-xj-hex"/>
                         <constraint firstItem="67d-3U-imb" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="NkL-XV-cRg"/>
                         <constraint firstItem="Nxv-5H-GAQ" firstAttribute="top" secondItem="Xm3-Nc-qFr" secondAttribute="top" id="O5h-mZ-grw"/>
                         <constraint firstItem="Nxv-5H-GAQ" firstAttribute="leading" secondItem="Xm3-Nc-qFr" secondAttribute="trailing" id="Oxm-It-U8H"/>
-                        <constraint firstItem="1Xf-cK-3Sq" firstAttribute="top" secondItem="0h1-aU-LOx" secondAttribute="bottom" constant="12" id="WCQ-Ga-lOl"/>
-                        <constraint firstItem="t9M-MC-OHO" firstAttribute="top" secondItem="yUj-6V-nlx" secondAttribute="bottom" constant="24" id="Xwz-9Y-2j9"/>
+                        <constraint firstItem="1Xf-cK-3Sq" firstAttribute="top" secondItem="0h1-aU-LOx" secondAttribute="bottom" constant="16" id="WCQ-Ga-lOl"/>
+                        <constraint firstItem="t9M-MC-OHO" firstAttribute="top" secondItem="yUj-6V-nlx" secondAttribute="bottom" constant="20" id="Xwz-9Y-2j9"/>
                         <constraint firstItem="yUj-6V-nlx" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="ZwR-eo-8zL"/>
                         <constraint firstItem="Xm3-Nc-qFr" firstAttribute="leading" secondItem="Ah4-f0-P58" secondAttribute="leading" id="afD-bC-F1e"/>
                         <constraint firstItem="0h1-aU-LOx" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="dTx-g2-cRx"/>
-                        <constraint firstItem="0h1-aU-LOx" firstAttribute="top" secondItem="t9M-MC-OHO" secondAttribute="bottom" constant="3" id="jrK-5d-SMe"/>
+                        <constraint firstItem="0h1-aU-LOx" firstAttribute="top" secondItem="t9M-MC-OHO" secondAttribute="bottom" constant="4" id="jrK-5d-SMe"/>
                         <constraint firstItem="yUj-6V-nlx" firstAttribute="top" secondItem="67d-3U-imb" secondAttribute="bottom" constant="4" id="lEw-0N-KrR"/>
                         <constraint firstItem="1Xf-cK-3Sq" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="mJR-DB-b6j"/>
                         <constraint firstItem="t9M-MC-OHO" firstAttribute="centerX" secondItem="Ah4-f0-P58" secondAttribute="centerX" id="noT-yK-T23"/>
                         <constraint firstAttribute="trailing" secondItem="Nxv-5H-GAQ" secondAttribute="trailing" id="o84-ZN-qG4"/>
-                        <constraint firstAttribute="bottom" secondItem="Xm3-Nc-qFr" secondAttribute="bottom" constant="24" id="vrt-Qq-rsk"/>
+                        <constraint firstAttribute="bottom" secondItem="Xm3-Nc-qFr" secondAttribute="bottom" constant="20" id="vrt-Qq-rsk"/>
                     </constraints>
                 </view>
             </subviews>

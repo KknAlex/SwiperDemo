@@ -18,7 +18,6 @@ class MainTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         delegate = self
         setupUI()
     }
@@ -26,13 +25,16 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let horizontalConstraint = centerButton.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor)
-        let verticalConstraint = centerButton.centerYAnchor.constraint(equalTo: tabBar.centerYAnchor, constant: -20)
+        let const: CGFloat = DeviceSize.isIphoneXOrLonger ? -20 : -4
+        let verticalConstraint = centerButton.centerYAnchor.constraint(equalTo: tabBar.centerYAnchor, constant: const)
         let widthConstraint = centerButton.widthAnchor.constraint(equalToConstant: buttonHeight)
         let heightConstraint = centerButton.heightAnchor.constraint(equalToConstant: buttonHeight)
         view.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         
-        tabBar.frame.size.height = 95
-        tabBar.frame.origin.y = view.frame.height - 95
+        if DeviceSize.isIphoneXOrLonger {
+            tabBar.frame.size.height = 95
+            tabBar.frame.origin.y = view.frame.height - 95
+        }
     }
     
     // MARK: - Actions
