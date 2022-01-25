@@ -17,7 +17,7 @@ class SwiperView: UIView {
     @IBOutlet var contentViews: [UIView]!
     
     private var eventSubviews: [BetEventView] = [.fromNib(), .fromNib()]
-    private let scrollView = UIScrollView()
+    private let scrollView = UIView()
     private var activeViewIndex = 0
 
     override func layoutSubviews() {
@@ -28,7 +28,9 @@ class SwiperView: UIView {
     func configure() {
         configureEventView()
         contentViews.forEach( {$0.backgroundColor = DefaultColor.primaryGray} )
-        eventSubviews.forEach( {$0.delegate = self} )
+        eventSubviews.forEach( {$0.delegate = self
+            $0.addRecognizer()
+        } )
     }
     
     // MARK: - Animations
@@ -65,8 +67,8 @@ class SwiperView: UIView {
     
     private func configureEventView() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
+//        scrollView.showsVerticalScrollIndicator = false
+//        scrollView.showsHorizontalScrollIndicator = false
         contentViews[0].addSubview(scrollView)
         let centerXConstraint = scrollView.centerYAnchor.constraint(equalTo: contentViews[0].centerYAnchor)
         let trailingConstraint = scrollView.trailingAnchor.constraint(equalTo: contentViews[0].trailingAnchor)
@@ -111,9 +113,15 @@ extension SwiperView: BetEventViewDelegate {
     
     // MARK: - BetEventViewDelegate
     
-    func viewDidEndSwipe(_ view: BetEventView) {
+    func viewDidEndSwipe(_ view: BetEventView, finishPoint: CGPoint) {
         let index = Int(eventSubviews.firstIndex(of: view) ?? 0)
-        returnViewOriginalState(index: index)
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.eventSubviews[index].center = finishPoint
+        }, completion: {(_) in
+            self.returnViewOriginalState(index: index)
+        })
+    
         activeViewIndex = activeViewIndex == 0 ? 1 : 0
     }
 }

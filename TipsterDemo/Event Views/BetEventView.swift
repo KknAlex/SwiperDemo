@@ -8,7 +8,7 @@
 import UIKit
 
 protocol BetEventViewDelegate: AnyObject {
-    func viewDidEndSwipe(_ view: BetEventView)
+    func viewDidEndSwipe(_ view: BetEventView, finishPoint: CGPoint)
 }
 
 class BetEventView: UIView {
@@ -48,7 +48,9 @@ class BetEventView: UIView {
         configureSubview(model: model)
         
         layoutIfNeeded()
-        
+    }
+    
+    func addRecognizer() {
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.beingDragged))
         panGestureRecognizer.delegate = self
         self.addGestureRecognizer(panGestureRecognizer)
@@ -89,7 +91,6 @@ class BetEventView: UIView {
         return mutableString
     }
     
-   
     private func afterSwipeAction() {
         let margin = (UIScreen.main.bounds.size.width / 2) * 0.75
         
@@ -107,20 +108,12 @@ class BetEventView: UIView {
     
     private func cardGoesRight() {
         let finishPoint = CGPoint(x: frame.size.width * 2, y: 2 * centerY + originalPoint.y)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.center = finishPoint
-        }, completion: {(_) in
-            self.delegate?.viewDidEndSwipe(self)
-        })
+        self.delegate?.viewDidEndSwipe(self, finishPoint: finishPoint)
     }
     
     private func cardGoesLeft() {
         let finishPoint = CGPoint(x: -frame.size.width * 2, y: 2 * centerY + originalPoint.y)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.center = finishPoint
-        }, completion: {(_) in
-            self.delegate?.viewDidEndSwipe(self)
-        })
+        self.delegate?.viewDidEndSwipe(self, finishPoint: finishPoint)
     }
 }
 
