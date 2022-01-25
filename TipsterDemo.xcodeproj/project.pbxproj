@@ -14,7 +14,6 @@
 		FA928C9E2796D1BD007000B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA928C9D2796D1BD007000B6 /* Assets.xcassets */; };
 		FA928CA12796D1BD007000B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA928C9F2796D1BD007000B6 /* LaunchScreen.storyboard */; };
 		FA928CA92796D251007000B6 /* SwiperDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CA82796D251007000B6 /* SwiperDataSource.swift */; };
-		FA928CAB27983802007000B6 /* Swiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CAA27983802007000B6 /* Swiper.swift */; };
 		FA928CAD27984C97007000B6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CAC27984C97007000B6 /* Colors.swift */; };
 		FA928CAF27984D96007000B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CAE27984D96007000B6 /* Extensions.swift */; };
 		FA928CB127984F8C007000B6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA928CB027984F8C007000B6 /* MainTabBarViewController.swift */; };
@@ -42,7 +41,6 @@
 		FA928CA02796D1BD007000B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA928CA22796D1BD007000B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA928CA82796D251007000B6 /* SwiperDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiperDataSource.swift; sourceTree = "<group>"; };
-		FA928CAA27983802007000B6 /* Swiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiper.swift; sourceTree = "<group>"; };
 		FA928CAC27984C97007000B6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FA928CAE27984D96007000B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA928CB027984F8C007000B6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +95,7 @@
 				FA928CAC27984C97007000B6 /* Colors.swift */,
 				FA928CC227986C78007000B6 /* TempGenerator.swift */,
 				FA928CB7279861F4007000B6 /* Models */,
-				FA928CB627986131007000B6 /* Custom */,
+				FA928CB627986131007000B6 /* Event Views */,
 				FA928CB427985FA4007000B6 /* Swiper */,
 				FA928CB527985FB0007000B6 /* Controllers */,
 				FA928C9A2796D1BA007000B6 /* Main.storyboard */,
@@ -112,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				FA928CA82796D251007000B6 /* SwiperDataSource.swift */,
-				FA928CAA27983802007000B6 /* Swiper.swift */,
+				FABBE51227998D9300FE4930 /* SwiperView.swift */,
+				FABBE51427998D9F00FE4930 /* SwiperView.xib */,
 			);
 			path = Swiper;
 			sourceTree = "<group>";
@@ -127,17 +126,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FA928CB627986131007000B6 /* Custom */ = {
+		FA928CB627986131007000B6 /* Event Views */ = {
 			isa = PBXGroup;
 			children = (
 				FA928CBE2798693E007000B6 /* BetEventView.swift */,
 				FA928CC02798694C007000B6 /* BetEventView.xib */,
 				FA928CC427988829007000B6 /* BetEventSubview.swift */,
 				FA928CC627988855007000B6 /* BetEventSubview.xib */,
-				FABBE51227998D9300FE4930 /* SwiperView.swift */,
-				FABBE51427998D9F00FE4930 /* SwiperView.xib */,
 			);
-			path = Custom;
+			path = "Event Views";
 			sourceTree = "<group>";
 		};
 		FA928CB7279861F4007000B6 /* Models */ = {
@@ -232,7 +229,6 @@
 				FABBE51127997F6000FE4930 /* DeviceSize.swift in Sources */,
 				FA928C952796D1BA007000B6 /* AppDelegate.swift in Sources */,
 				FA928CBD279865BE007000B6 /* BetPart.swift in Sources */,
-				FA928CAB27983802007000B6 /* Swiper.swift in Sources */,
 				FA928CA92796D251007000B6 /* SwiperDataSource.swift in Sources */,
 				FABBE51327998D9300FE4930 /* SwiperView.swift in Sources */,
 				FA928C972796D1BA007000B6 /* SceneDelegate.swift in Sources */,
@@ -316,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -371,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -387,12 +383,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S6UD6CGM2;
 				INFOPLIST_FILE = TipsterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AK.TipsterDemo;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SwiperDemo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,12 +403,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S6UD6CGM2;
 				INFOPLIST_FILE = TipsterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AK.TipsterDemo;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SwiperDemo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

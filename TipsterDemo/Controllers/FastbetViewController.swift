@@ -47,6 +47,14 @@ class FastbetViewController: UIViewController {
         
     }
     
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        subview.animation(side: .right)
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        subview.animation(side: .left)
+    }
+    
     // MARK: - Helpers
     
     private func setupUi() {

@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-protocol SwiperDataSource: AnyObject {
-    
-    func swiperNumberOfItems(_ swiper: Swiper) -> Int
-
-    func swiper(_ swiper: Swiper, viewForItemAt index: Int) -> UIView
-}
-
-protocol SwiperDelegate: AnyObject {
-    
-}
+//protocol SwiperDataSource: AnyObject {
+//
+//    func swiperNumberOfItems(_ swiper: Swiper) -> Int
+//
+//    func swiper(_ swiper: Swiper, viewForItemAt index: Int) -> UIView
+//}
+//
+//protocol SwiperDelegate: AnyObject {
+//
+//}

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XPt-nT-MIP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -179,128 +180,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQM-PC-po0">
-                                <rect key="frame" x="0.0" y="186" width="414" height="517"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="na8-dX-DiH">
-                                <rect key="frame" x="0.0" y="703" width="414" height="110"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TK3-AP-de8">
-                                        <rect key="frame" x="0.0" y="0.0" width="83" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-iR-tOL">
-                                                <rect key="frame" x="17.5" y="31" width="48" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="48" id="T4b-fE-4Pd"/>
-                                                    <constraint firstAttribute="height" constant="48" id="cPZ-2k-cZn"/>
-                                                </constraints>
-                                                <state key="normal" image="fastbet_left_icon"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="LPn-iR-tOL" firstAttribute="centerX" secondItem="TK3-AP-de8" secondAttribute="centerX" id="CJ0-Kn-k9J"/>
-                                            <constraint firstItem="LPn-iR-tOL" firstAttribute="centerY" secondItem="TK3-AP-de8" secondAttribute="centerY" id="DLh-D9-0yZ"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-bt-ls5">
-                                        <rect key="frame" x="83" y="0.0" width="82.5" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-4k-fwr">
-                                                <rect key="frame" x="9" y="23" width="64" height="64"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="QLE-DH-qut"/>
-                                                    <constraint firstAttribute="height" constant="64" id="rJf-HV-2xD"/>
-                                                </constraints>
-                                                <state key="normal" image="fastbet_cancel_icon"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="FD5-4k-fwr" firstAttribute="centerY" secondItem="dcD-bt-ls5" secondAttribute="centerY" id="Kz6-WW-sOi"/>
-                                            <constraint firstItem="FD5-4k-fwr" firstAttribute="centerX" secondItem="dcD-bt-ls5" secondAttribute="centerX" id="mFm-em-Qtc"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-tB-Zu4">
-                                        <rect key="frame" x="165.5" y="0.0" width="83" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psj-vh-edM">
-                                                <rect key="frame" x="15" y="28.5" width="53" height="53"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="53" id="Ap4-Pb-Bo2"/>
-                                                    <constraint firstAttribute="height" constant="53" id="rcw-Wx-GRA"/>
-                                                </constraints>
-                                                <state key="normal" image="fastbet_center_icon"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="psj-vh-edM" firstAttribute="centerY" secondItem="JFJ-tB-Zu4" secondAttribute="centerY" id="Z5H-l8-cqo"/>
-                                            <constraint firstItem="psj-vh-edM" firstAttribute="centerX" secondItem="JFJ-tB-Zu4" secondAttribute="centerX" id="ZJc-li-ikQ"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSV-bi-ALC">
-                                        <rect key="frame" x="248.5" y="0.0" width="82.5" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-EW-jl5">
-                                                <rect key="frame" x="9.5" y="23" width="64" height="64"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="64" id="Ba9-2x-wOh"/>
-                                                    <constraint firstAttribute="width" constant="64" id="Wc4-bn-cLr"/>
-                                                </constraints>
-                                                <state key="normal" image="fastbet_bet_icon"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="cpf-EW-jl5" firstAttribute="centerX" secondItem="gSV-bi-ALC" secondAttribute="centerX" id="HIS-ga-OS6"/>
-                                            <constraint firstItem="cpf-EW-jl5" firstAttribute="centerY" secondItem="gSV-bi-ALC" secondAttribute="centerY" id="wVR-2B-mew"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8m-9I-zhg">
-                                        <rect key="frame" x="331" y="0.0" width="83" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13w-0X-maL">
-                                                <rect key="frame" x="17.5" y="31" width="48" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="48" id="0Qt-qO-jZ1"/>
-                                                    <constraint firstAttribute="height" constant="48" id="wNv-NT-w0z"/>
-                                                </constraints>
-                                                <state key="normal" image="fastbet_like_icon"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="13w-0X-maL" firstAttribute="centerX" secondItem="m8m-9I-zhg" secondAttribute="centerX" id="WMc-GI-Xbu"/>
-                                            <constraint firstItem="13w-0X-maL" firstAttribute="centerY" secondItem="m8m-9I-zhg" secondAttribute="centerY" id="bfS-GZ-ncl"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="0gz-hS-EoV"/>
-                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="0lq-35-yKN"/>
-                                    <constraint firstAttribute="trailing" secondItem="m8m-9I-zhg" secondAttribute="trailing" id="0vR-of-WUR"/>
-                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="leading" secondItem="TK3-AP-de8" secondAttribute="trailing" id="2do-6c-f4w"/>
-                                    <constraint firstAttribute="bottom" secondItem="dcD-bt-ls5" secondAttribute="bottom" id="Iim-Hw-iig"/>
-                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="J7z-lt-aV3"/>
-                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="KGE-Lf-mS7"/>
-                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="KOv-QA-8Jo"/>
-                                    <constraint firstAttribute="bottom" secondItem="gSV-bi-ALC" secondAttribute="bottom" id="Mc6-cM-YYs"/>
-                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="leading" secondItem="JFJ-tB-Zu4" secondAttribute="trailing" id="MnQ-eL-gmh"/>
-                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="leading" secondItem="dcD-bt-ls5" secondAttribute="trailing" id="Nxl-gX-bxa"/>
-                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="Scx-bI-GuE"/>
-                                    <constraint firstAttribute="bottom" secondItem="TK3-AP-de8" secondAttribute="bottom" id="WTF-ju-4FU"/>
-                                    <constraint firstAttribute="bottom" secondItem="JFJ-tB-Zu4" secondAttribute="bottom" id="dfw-9w-0kB"/>
-                                    <constraint firstItem="TK3-AP-de8" firstAttribute="leading" secondItem="na8-dX-DiH" secondAttribute="leading" id="fcX-KL-8nO"/>
-                                    <constraint firstItem="TK3-AP-de8" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="ftf-Rf-dn5"/>
-                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="g48-E3-eSO"/>
-                                    <constraint firstAttribute="bottom" secondItem="m8m-9I-zhg" secondAttribute="bottom" id="jlK-4p-sGL"/>
-                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="jmK-yj-5YR"/>
-                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="leading" secondItem="gSV-bi-ALC" secondAttribute="trailing" id="kaY-aN-qF7"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu6-Nh-PHo">
                                 <rect key="frame" x="0.0" y="88" width="414" height="98"/>
                                 <subviews>
@@ -419,6 +298,134 @@
                                     <constraint firstItem="yNp-6f-qHm" firstAttribute="top" secondItem="MJd-Zh-qDd" secondAttribute="bottom" constant="6" id="myV-7o-lqh"/>
                                     <constraint firstItem="MgB-bb-Kev" firstAttribute="leading" secondItem="cu6-Nh-PHo" secondAttribute="leading" constant="16" id="wBD-TK-fsm"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="na8-dX-DiH">
+                                <rect key="frame" x="0.0" y="703" width="414" height="110"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TK3-AP-de8">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-iR-tOL">
+                                                <rect key="frame" x="17.5" y="31" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="T4b-fE-4Pd"/>
+                                                    <constraint firstAttribute="height" constant="48" id="cPZ-2k-cZn"/>
+                                                </constraints>
+                                                <state key="normal" image="fastbet_left_icon"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="LPn-iR-tOL" firstAttribute="centerX" secondItem="TK3-AP-de8" secondAttribute="centerX" id="CJ0-Kn-k9J"/>
+                                            <constraint firstItem="LPn-iR-tOL" firstAttribute="centerY" secondItem="TK3-AP-de8" secondAttribute="centerY" id="DLh-D9-0yZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-bt-ls5">
+                                        <rect key="frame" x="83" y="0.0" width="82.5" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-4k-fwr">
+                                                <rect key="frame" x="9" y="23" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="QLE-DH-qut"/>
+                                                    <constraint firstAttribute="height" constant="64" id="rJf-HV-2xD"/>
+                                                </constraints>
+                                                <state key="normal" image="fastbet_cancel_icon"/>
+                                                <connections>
+                                                    <action selector="cancelButtonPressed:" destination="aat-c7-5uZ" eventType="touchUpInside" id="kGf-lS-qs6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="FD5-4k-fwr" firstAttribute="centerY" secondItem="dcD-bt-ls5" secondAttribute="centerY" id="Kz6-WW-sOi"/>
+                                            <constraint firstItem="FD5-4k-fwr" firstAttribute="centerX" secondItem="dcD-bt-ls5" secondAttribute="centerX" id="mFm-em-Qtc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-tB-Zu4">
+                                        <rect key="frame" x="165.5" y="0.0" width="83" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psj-vh-edM">
+                                                <rect key="frame" x="15" y="28.5" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="Ap4-Pb-Bo2"/>
+                                                    <constraint firstAttribute="height" constant="53" id="rcw-Wx-GRA"/>
+                                                </constraints>
+                                                <state key="normal" image="fastbet_center_icon"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="psj-vh-edM" firstAttribute="centerY" secondItem="JFJ-tB-Zu4" secondAttribute="centerY" id="Z5H-l8-cqo"/>
+                                            <constraint firstItem="psj-vh-edM" firstAttribute="centerX" secondItem="JFJ-tB-Zu4" secondAttribute="centerX" id="ZJc-li-ikQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSV-bi-ALC">
+                                        <rect key="frame" x="248.5" y="0.0" width="82.5" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-EW-jl5">
+                                                <rect key="frame" x="9.5" y="23" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="Ba9-2x-wOh"/>
+                                                    <constraint firstAttribute="width" constant="64" id="Wc4-bn-cLr"/>
+                                                </constraints>
+                                                <state key="normal" image="fastbet_bet_icon"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cpf-EW-jl5" firstAttribute="centerX" secondItem="gSV-bi-ALC" secondAttribute="centerX" id="HIS-ga-OS6"/>
+                                            <constraint firstItem="cpf-EW-jl5" firstAttribute="centerY" secondItem="gSV-bi-ALC" secondAttribute="centerY" id="wVR-2B-mew"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8m-9I-zhg">
+                                        <rect key="frame" x="331" y="0.0" width="83" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13w-0X-maL">
+                                                <rect key="frame" x="17.5" y="31" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="0Qt-qO-jZ1"/>
+                                                    <constraint firstAttribute="height" constant="48" id="wNv-NT-w0z"/>
+                                                </constraints>
+                                                <state key="normal" image="fastbet_like_icon"/>
+                                                <connections>
+                                                    <action selector="likeButtonPressed:" destination="aat-c7-5uZ" eventType="touchUpInside" id="GCm-DK-Kj5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="13w-0X-maL" firstAttribute="centerX" secondItem="m8m-9I-zhg" secondAttribute="centerX" id="WMc-GI-Xbu"/>
+                                            <constraint firstItem="13w-0X-maL" firstAttribute="centerY" secondItem="m8m-9I-zhg" secondAttribute="centerY" id="bfS-GZ-ncl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="0gz-hS-EoV"/>
+                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="0lq-35-yKN"/>
+                                    <constraint firstAttribute="trailing" secondItem="m8m-9I-zhg" secondAttribute="trailing" id="0vR-of-WUR"/>
+                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="leading" secondItem="TK3-AP-de8" secondAttribute="trailing" id="2do-6c-f4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="dcD-bt-ls5" secondAttribute="bottom" id="Iim-Hw-iig"/>
+                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="J7z-lt-aV3"/>
+                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="KGE-Lf-mS7"/>
+                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="KOv-QA-8Jo"/>
+                                    <constraint firstAttribute="bottom" secondItem="gSV-bi-ALC" secondAttribute="bottom" id="Mc6-cM-YYs"/>
+                                    <constraint firstItem="gSV-bi-ALC" firstAttribute="leading" secondItem="JFJ-tB-Zu4" secondAttribute="trailing" id="MnQ-eL-gmh"/>
+                                    <constraint firstItem="JFJ-tB-Zu4" firstAttribute="leading" secondItem="dcD-bt-ls5" secondAttribute="trailing" id="Nxl-gX-bxa"/>
+                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="Scx-bI-GuE"/>
+                                    <constraint firstAttribute="bottom" secondItem="TK3-AP-de8" secondAttribute="bottom" id="WTF-ju-4FU"/>
+                                    <constraint firstAttribute="bottom" secondItem="JFJ-tB-Zu4" secondAttribute="bottom" id="dfw-9w-0kB"/>
+                                    <constraint firstItem="TK3-AP-de8" firstAttribute="leading" secondItem="na8-dX-DiH" secondAttribute="leading" id="fcX-KL-8nO"/>
+                                    <constraint firstItem="TK3-AP-de8" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="ftf-Rf-dn5"/>
+                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="width" secondItem="TK3-AP-de8" secondAttribute="width" id="g48-E3-eSO"/>
+                                    <constraint firstAttribute="bottom" secondItem="m8m-9I-zhg" secondAttribute="bottom" id="jlK-4p-sGL"/>
+                                    <constraint firstItem="dcD-bt-ls5" firstAttribute="top" secondItem="na8-dX-DiH" secondAttribute="top" id="jmK-yj-5YR"/>
+                                    <constraint firstItem="m8m-9I-zhg" firstAttribute="leading" secondItem="gSV-bi-ALC" secondAttribute="trailing" id="kaY-aN-qF7"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQM-PC-po0">
+                                <rect key="frame" x="0.0" y="186" width="414" height="517"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VjB-sg-rEE"/>
